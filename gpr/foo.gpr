@@ -1,0 +1,15 @@
+project Foo is
+
+   for Languages use ("Ada");
+   
+   for Source_Dirs use ("../src");
+   
+   -- Specifying the source files like this is strictly not needed,
+   -- but can remove some confusion when working in an IDE
+   for Source_Files use ("foo.ads", "foo.adb", "main.adb");
+   
+   for Object_Dir use "../obj";
+   for Exec_Dir use "../bin";
+   for Main use ("main.adb");
+   
+end Foo;

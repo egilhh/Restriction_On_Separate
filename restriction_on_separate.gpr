@@ -1,0 +1,5 @@
+aggregate project Restriction_On_Separate is
+
+   for Project_Files use ("gpr/foo.gpr", "gpr/foo_bar.gpr");
+
+end Restriction_On_Separate;
