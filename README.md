@@ -133,10 +133,11 @@ So now we're ready to build (-p is just to automatically create any missing dire
 gprbuild -p -P restriction_on_separate.gpr
 
 The result should look like this:
-Compile
-   [Subunit]      foo-bar.adb
-foo-bar.adb:6:84: violation of restriction "No_Implementation_Attributes" at ../adc/restrictions.adc:1
-gprbuild: *** compilation phase failed
+
+* Compile
+*   [Subunit]      foo-bar.adb
+* foo-bar.adb:6:84: violation of restriction "No_Implementation_Attributes" at ../adc/restrictions.adc:1
+* gprbuild: *** compilation phase failed
 
 Fixing the violation, should now result in a successful build, even though other parts of the code
 is using an implementation defined attribute.
