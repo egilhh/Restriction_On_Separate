@@ -32,7 +32,7 @@ Yes.
 Well, it's more of a hack than a workaround...
 Feel free to find it useful at your own risk ;)
 
-# The hack
+## The hack
 The trick is to fool gprbuild into performing a separate (no pun intended) 
 syntax checking step on the subunit in question. This example takes advantage
 of the way project files work to fake a language and perform the build in multiple steps
