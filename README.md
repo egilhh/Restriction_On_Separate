@@ -39,7 +39,7 @@ of the way project files work to fake a language and perform the build in multip
 
 Assuming a project project structure like this (most small projects start out in a similar fashion):
 
-* <root>
+* root
   * src            - Source_Dirs
     * foo.ads
     * foo.adb
@@ -67,7 +67,7 @@ Called restriction_on_separate.gpr in this example
 The project structure should now look something like this 
 (This how this example is arranged):
 
-* <root>
+* root
   * src                          - Source_Dirs
     * foo.ads
     * foo.adb
